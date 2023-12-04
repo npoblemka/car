@@ -27,5 +27,7 @@ for (let i = 0; i < footerTitle.length; i++) {
 
 }
 
+$('.banner').hide().fadeTo(3000, 1);
+$('.banner-img').hide().show(3000);
 
 
