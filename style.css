@@ -129,8 +129,27 @@ button {
     color: #e2a855;
 }
 
+.nav-main__list--open {
+    position: absolute;
+    z-index: 10;
+
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    padding-top: 123px;
+
+    background-color: black;
+    text-align: center;
+    top: 40px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+}
+
 @media (max-width:857px) {
     #header-section {
+        
         padding: 25px 0 17px;
     }
 
@@ -148,21 +167,7 @@ button {
     }
 
     .nav-main__list--open {
-        position: absolute;
-        z-index: 10;
-
         display: block;
-        height: 100vh;
-        width: 100vw;
-        padding-top: 123px;
-
-        background-color: black;
-        text-align: center;
-        top: 40px;
-        bottom: 0;
-        right: 0;
-        left: 0;
-
     }
 
     .nav-main__item+.nav-main__item {
@@ -189,7 +194,12 @@ button {
     }
 
 }
-
+@media (orientation: landscape),  (max-width:857px) {
+    .nav-main__list--open {
+        padding-top: 90px;
+        height: 150vh;
+    }
+}
 
 
 /* banner */
@@ -400,10 +410,11 @@ button {
     #rent-section {
         padding: 40px 0 80px;
     }
-    
+
     .rent {
         height: 380px;
     }
+
     .rent__name {
         font-size: 32px;
     }
@@ -474,6 +485,7 @@ button {
     .services__text {
         max-width: 530px;
     }
+
     .services-section__title {
         margin-bottom: 30px;
     }
