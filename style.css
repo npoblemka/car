@@ -194,7 +194,7 @@ button {
     }
 
 }
-@media (orientation: landscape),  (max-width:857px) {
+@media (orientation: landscape) and  (max-width:857px) {
     .nav-main__list--open {
         padding-top: 90px;
         height: 150vh;
